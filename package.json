@@ -1,0 +1,24 @@
+{
+  "name": "hello-sara",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deferred-intent agent: OpenAI for language, runtime for the clock. Vercel-ready.",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 8787",
+    "build": "next build",
+    "start": "next start -p 8787",
+    "test": "node --test test/routing.test.js test/layers.test.js",
+    "test:live": "node test/live-layers.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.38.4",
+    "next": "^15.5.25",
+    "openai": "^6.49.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
